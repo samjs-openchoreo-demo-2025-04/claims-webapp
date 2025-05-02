@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: claims-webapp
+  description: Claims Webapp
+  annotations:
+    github.com/project-slug: samjs-openchoreo-demo-2025-04/claims-webapp
+    # backstage.io/kubernetes-label-selector: 'core.choreo.dev/component=claims-webapp,core.choreo.dev/organization=default-org,core.choreo.dev/project=internal-apps'
+    backstage.io/kubernetes-id: claims-webapp
+  tags:
+    - react 
+    - openchoreo
+  labels:
+    core.choreo.dev/name: claims-webapp
+    core.choreo.dev/organization: default-org
+    core.choreo.dev/project: internal-apps
+  links:
+    - url: https://github.com/samjs-openchoreo-demo-2025-04/claims-webapp
+      title: GitHub Repo
+      icon: github
+    - url: https://github.com/openchoreo/openchoreo
+      title: OpenChoreo
+      icon: web
+spec:
+  type: website
+  lifecycle: experimental
+  owner: group:default/guests
+  system: internal-apps
